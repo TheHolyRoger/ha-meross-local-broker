@@ -10,6 +10,9 @@
       <mat-card-content>
         {{ service.description }}
       </mat-card-content>
+      <button mat-menu-item (click)="restartService({{ service.name }})">
+        <mat-icon>refresh</mat-icon>
+      </button>
     </mat-card>
   </div>
 
